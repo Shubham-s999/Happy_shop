@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	background-color: lightpink;
+}
+.radial-color{
+	background: radial-gradient(#fff,pink);
+}
+.cart-containt{
+	min-height: 1050px;
+	max-width: 1400px;
+	margin: auto;
+}
+.radial-color-cart{
+	background: radial-gradient(#fff,lightgreen);
+}
+.rightmenu ul{
+	list-style-type: none;
+	float: right;
+	display: inline-block;
+	padding-top: 25px;
+	margin: 0px;
+}
+.rightmenu li{
+	margin-right: 25px; 
+	margin-bottom: 20px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-weight: bold;
+	transition: transform 0.5s;
+}
+.rightmenu li a{
+	text-decoration: none;
+	color: black;
+}
+.menu{
+	max-width: 1250px;
+	position: sticky;
+	z-index: 1;
+	top: 0;
+	background-color: lightyellow;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	margin: auto;
+}
+.leftmenu img{
+	float: left;
+	height: 100px;
+	max-width: 200px;
+	text-shadow: transparent;
+	border-radius: 5px;
+	transition: transform 0.5s;
+}
+.leftmenu img:hover{
+	transform: translateX(10px);
+}
+.leftmenu{
+	width: 25%;
+	margin-right: 0px;
+}
+.rightmenu{
+	width: 75%;
+	float: right;
+	flex: 1;
+}
+.rightmenu ul li a:hover{
+	color: green;
+}
+.rightmenu ul li:hover{
+	color: green;
+	transform: translateY(-3px);
+}
+#firstlist{
+	color: orange;
+}
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.banner{
+	margin-top: 30px;
+}
+.container1{
+	position: relative;
+	color: white;
+	padding-bottom: 25px;
+}
+.img1{
+	position: relative;
+	max-width: 1250px;
+	width: 100%;
+}
+.text{
+	position: absolute;
+	top: 50%;
+	transform: translate(0%,-50%);
+	left: 20px;
+	text-align: left;
+	font-family: sans-serif;
+}
+.text h1{
+	padding-bottom: 10px;
+}
+.img2{
+	position: absolute;
+	top: -10px;
+	right: 25px;
+	max-width: 150px;
+	width: 100%;
+}
+.img2:hover{
+	position: absolute;
+	max-width: 200px;
+	top: -25px;
+	right: 0px;
+}
+.btn{
+	display: inline-block;
+	background-color: #ff523b; 
+	color: #fff;
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 30px;
+	line-height: 30px;
+	border-radius: 30px;
+	transition: transform 0.5s;
+}
+.btn:hover{
+	transform: translateY(-5px);
+}

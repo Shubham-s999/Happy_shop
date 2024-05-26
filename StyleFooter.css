@@ -1,0 +1,24 @@
+footer{
+	background-color: #444;
+	height: 250px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 100%;
+	margin-top: 100px;
+	padding-top: 30px;
+}
+.cartf{
+	margin-top: 0px;
+	height: 220px;
+}
+.mainf{
+	max-width: 1300px;
+	margin: auto;
+}
+.section{
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+}

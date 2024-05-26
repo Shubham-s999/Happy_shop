@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CART page</title>
+	<link rel="stylesheet" type="text/css" href="StyleHeader.css">
+	<script type="text/javascript" src="java-cart.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="StyleCart.css">
+	<link rel="stylesheet" type="text/css" href="StyleCategory.css">
+	<link rel="stylesheet" type="text/css" href="StyleFooter.css">
+</head>
+<body>
+
+<div class="radial-color-cart">
+	<div class="cart-containt">
+		<div class="menu">
+			<div class="leftmenu">
+				<a href="HOME PAGE.html"><img src="image/hs.jpg"></a>
+			</div>
+
+			<div class="rightmenu">
+				<ul>
+					<li><a href="HOME PAGE.html">home</a></li>
+					<li><a href="allproduct.html">all Product</a></li>
+					<li><a href="about_us.html">about us</a></li>
+					<li id="firstlist">cart</li>
+					<li><a href="indext.html">login</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="main-page">
+			<h1>Cart Table</h1>
+			<table border="2">
+				<tr>
+					<th class="colum1">Index Number</th>
+					<th class="colum2">Item Name</th>
+					<th class="colum3">Quntity</th>
+					<th class="colum4">Rate</th>
+				</tr>
+
+				<tr>
+					<td class="colum1">1</td>
+					<td class="det">
+						<img id="i1" height="100px" width="100px">
+						<h3 id="n1"></h3>
+						<p id="r1"></p>
+						<small id="d1"></small>
+					</td>
+					<td id="q1"></td>
+					<td id="p1"></td>
+				</tr>
+
+				<tr>
+					<td class="colum1">2</td>
+					<td class="det">
+						<img id="i2" height="100px" width="100px">
+						<h3 id="n2"></h3>
+						<p id="r2"></p>
+						<small id="d2"></small>
+					</td>
+					<td id="q2"></td>
+					<td id="p2"></td>
+				</tr>
+
+				<tr>
+					<td class="colum1">3</td>
+					<td class="det">
+						<img id="i3" height="100px" width="100px">
+						<h3 id="n3"></h3>
+						<p id="r3"></p>
+						<small id="d3"></small>
+					</td>
+					<td id="q3"></td>
+					<td id="p3"></td>
+				</tr>
+
+				<tr>
+					<td class="colum1">4</td>
+					<td class="det">
+						<img id="i4" height="100px" width="100px">
+						<h3 id="n4"></h3>
+						<p id="r4"></p>
+						<small id="d4"></small>
+					</td>
+					<td id="q4"></td>
+					<td id="p4"></td>
+				</tr>
+
+				<tr>
+					<td class="colum1">5</td>
+					<td class="det">
+						<img id="i5" height="100px" width="100px">
+						<h3 id="n5"></h3>
+						<p id="r5"></p>
+						<small id="d5"></small>
+					</td>
+					<td id="q5"></td>
+					<td id="p5"></td>
+				</tr>
+
+				<tr>
+					<td class="colum1">6</td>
+					<td class="det">
+						<img id="i6" height="100px" width="100px">
+						<h3 id="n6"></h3>
+						<p id="r6"></p>
+						<small id="d6"></small>
+					</td>
+					<td id="q6"></td>
+					<td id="p6"></td>
+				</tr>
+
+			</table>
+			
+		</div><br><br>
+
+		<div class="set">
+		<center>
+			<a href="#sp"><button title="Add Item for perticular Index" type="button">Add Product</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button onclick="f1('','','','','')" title="Remove Item for perticular Index" type="button">Remove Item</button>&nbsp;
+		</center>
+
+			<br><br>
+
+			<hr><p class="ins" style="text-align: center;">Set Table Index and Add Item</p><hr>
+
+			<div class="btty">
+			<center>
+				<input type="button" id="countButton" title="Set Index and Add Item" value="Pluse Index" />&nbsp;&nbsp;
+				<input type="button" id="min" title="Set Index and Add Item" value="Minus Index" />&nbsp;&nbsp;
+			</center>
+			<p style="text-align: center;" title="Set Index and Add Item"> Index Number : <span id="displayCount"><mark>1</mark></span></p>
+			<center><input type="button" value="RESET Index" id="resetButton" title="Reset Index" /></center>
+		</div>
+		</div>
+	</div>
+
+
+
+	<div class="product">
+	<div  class="samll-contant">
+		<h2 class="title-p" id="sp">Select Product</h2>
+
+		<div class="row">
+			<div class="col-4">
+				<img src="image\7.jpg">
+				<h4>Dell Laptop</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$698.20</p>
+				<button onclick="f1('image/7.jpg','Dell Laptop',3.5,1,698.20)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\8.jpg">
+				<h4>Dell Laptop '360 deg'</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$720.00</p>
+				<button onclick="f1('image/8.jpg','Dell Laptop 360 deg',4.5,1,720.00)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\9.jpg">
+				<h4>Asus gamming Laptop</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$650.00</p>
+				<button onclick="f1('image/9.jpg','Asus gamming Laptop',5,1,650.00)">Add to Cart</button>
+			</div>
+			
+		</div>
+		<hr><br>
+
+		<div class="row">
+			<div class="col-4">
+				<img src="image\10.jpg">
+				<h4>Mac Air Apple Laptop</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$800.00</p>
+				<button onclick="f1('image/10.jpg','Mac Air Apple Laptop',3,1,800.00)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\11.jpg">
+				<h4>Dell desktop</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$370.00</p>
+				<button onclick="f1('image/11.jpg','Dell_desktop',3.5,1,370.00)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\12.jpg">
+				<h4>Dell CPU</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$856.99</p>
+				<button onclick="f1('image/12.jpg','Dell CPU',4,1,856.99)">Add to Cart</button>
+			</div>
+			
+		</div>
+		<hr><br>
+
+		<div class="row">
+			<div class="col-4">
+				<img src="image\13.jpg">
+				<h4>lenovo desktop</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$350.00</p>
+				<button onclick="f1('image/13.jpg','lenovo desktop',2.5,1,350.00)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\14.jpg">
+				<h4>HP CPU</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$425.00</p>
+				<button onclick="f1('image/14.jpg','HP CPU',4.5,1,425.00)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\15.jpg">
+				<h4>HP Moniter '24 inch'</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$120.00</p>
+				<button onclick="f1('image/15.jpg','HP Moniter 24 inch,3,1,120.00)">Add to Cart</button>
+			</div>
+			
+		</div>
+		<hr><br>
+
+		<div class="row">
+			<div class="col-4">
+				<img src="image\16.jpg">
+				<h4>HP Moniter '22 inch'</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$100.00</p>
+				<button onclick="f1('image/16.jpg','HP Moniter 22 inch,3.5,1,100.00)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\17.jpg">
+				<h4>Dell Moniter '26 inch'</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$250.00</p>
+				<button onclick="f1('image/17.jpg','Dell Moniter 26 inch',4.5,1,250.00)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\18.jpg">
+				<h4>Dell Moniter</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$90.00</p>
+				<button onclick="f1('image/18.jpg','Dell Moniter',3.5,1,90.00)">Add to Cart</button>
+			</div>
+			
+		</div>
+		<hr><br>
+
+		<div class="row">
+			<div class="col-4">
+				<img src="image\1.jpg">
+				<h4>A Series Spker</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$120.00</p>
+				<button onclick="f1('image/1.jpg','A Series Spker',4.5,1,120.00)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\2.jpg">
+				<h4>Key-Bord and Mouse</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$60.50</p>
+				<button onclick="f1('image/2.jpg','Key-Bord and Mouse',4.5,1,60.50)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\3.jpg">
+				<h4>Laptop</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$350.00</p>
+				<button onclick="f1('image/3.jpg','Laptop',4.5,1,350.00)">Add to Cart</button>
+			</div>
+			
+		</div>
+		<hr><br>
+
+		<div class="row">
+			<div class="col-4">
+				<img src="image\4.jpg">
+				<h4>Home theater</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$50.00</p>
+				<button onclick="f1('image/4.jpg','Home theater',4.5,1,50.50)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\5.jpg">
+				<h4>Mac Book</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$400.00</p>
+				<button onclick="f1('image/5.jpg','Mac Book',4.5,1,400.00)">Add to Cart</button>
+			</div>
+			<div class="col-4">
+				<img src="image\6.jpg">
+				<h4>Preoator</h4>
+				<div class="rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<p>$350.00</p>
+				<button onclick="f1('image/6.jpg','Preoator',4.5,1,350.00)">Add to Cart</button>
+			</div>
+			
+		</div>
+		<hr><br>
+
+		</div>
+	</div>
+</div>
+<!-- this is Index counter script -->
+
+<script type="text/javascript">
+
+		var count = 1;
+		var countButton = document.getElementById("countButton");
+		var min = document.getElementById("min");
+		var displayCount = document.getElementById("displayCount");
+		countButton.onclick = function(){
+	  			count++;
+	  			displayCount.innerHTML = count;
+	  	}
+	  	min.onclick = function(){
+	  			count--;
+	  			displayCount.innerHTML = count;
+	  	}
+		resetButton.onclick = function(){
+	  			count = 0;
+	  			displayCount.innerHTML = count;
+		}
+</script>
+<!-- footer -->
+
+<footer class="cartf">
+	<div class="mainf">
+		<div class="section">
+			<p>first section</p>
+		</div>
+		<div class="section">
+			<p>second section</p>
+		</div>
+		<div class="section">
+			<p>third section</p>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

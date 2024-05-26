@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login box</title>
+	<link rel="stylesheet" type="text/css" href="StyleHeader.css">
+	<link rel="stylesheet" type="text/css" href="StyleFooter.css">
+	<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		background: radial-gradient(#ffd,#bff333);
+	}
+	.main-l{
+		margin-top: 0px;
+		min-height: 700px;
+		background-size: contain;
+		position: relative;
+		font-family: sans-serif;
+	}
+	.loginbox{
+		width: 390px;
+		height: 470px;
+		background-color: rgba(0,0,0,0.8);
+		color: #fff;
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%,-50%); 
+		box-sizing: border-box;
+		padding: 70px;
+		padding-left: center;
+	}	
+	.balar{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		position: absolute;
+		top: -50px;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.loginbox h3{
+		margin: 0;
+		padding: 0 0 20px;
+		text-align: center;
+		font-size: 22px;
+	}
+	.loginbox p{
+		margin: 0;
+		padding: 15px 0 15px;
+		font-weight: bold;
+		font-size: 20px;
+		background: transparent;
+	}
+	input{
+		width: 100%;
+		height: 20px;
+		color: green;
+		font-size: 16px;
+		margin-bottom: 20px;
+		border: none;
+		border-bottom: 2px solid white;
+		background: transparent; 
+	}
+	button{
+		width: 100%;
+		border-radius: 20px;
+		background-color: #ff523b;
+		height: 30px;
+		border: none;
+		transition: transform 0.5s;
+	}
+	.loginbox button:hover{
+		transform: translateY(-5px);
+	}
+	form a{
+		font-style: none;
+		text-decoration: none;
+		color: #af523d;
+		font-size: 13px;
+	}
+	form a:hover{
+		color: lightgreen;
+		font-size: 14px;
+	}
+	</style>
+</head>
+<body>	
+	<div class="container">
+		<div class="menu">
+			<div class="leftmenu">
+				<a href="HOME PAGE.html"><img src="image/hs.jpg"></a>
+			</div>
+
+			<div class="rightmenu">
+				<ul>
+					<li><a href="HOME PAGE.html">home</a></li>
+					<li><a href="allproduct.html">all Product</a></li>
+					<li><a href="about_us.html">about us</a></li>
+					<li><a href="cart-page.html">cart</a></li>
+					<li id="firstlist">login</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-l">
+			<div class="loginbox">
+				<img src="image/balar.jpeg" class="balar">
+				<h3>LOGIN HEAR</h3>
+				<form>
+					<p>Username</p>
+					<input type="text" name="un" placeholder="Enter the Username">
+					<p>Password</p>
+					<input type="Password" name="pw" placeholder="Enter the Password"><br><br>
+					<button name="sb" value="Login">SUBMIT</button><br><br>
+					<h5><a href="#">forgote your password?</a><br><br>
+					<a href="#">Don't have an acount?</a></h5>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+
+<footer>
+	<div class="mainf">
+		<div class="section">
+			<p>first section</p>
+		</div>
+		<div class="section">
+			<p>second section</p>
+		</div>
+		<div class="section">
+			<p>third section</p>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

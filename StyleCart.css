@@ -1,0 +1,80 @@
+table{
+	border-collapse: collapse;
+	width: 70%;
+	float: left;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+th{
+	padding: 20px;
+	background-color: powderblue;
+	color: red;
+}
+table img{
+	float:left;
+	margin: 5px;
+	width: 120px;
+	height: 100px;
+	margin-right: 25px;
+}
+table tr td{
+	text-align: center;
+}
+.det{
+	text-align: left;
+}
+.get p,small,h3{
+	
+	margin-top: 15px;
+}
+button{
+	margin-top: 30px;
+	padding: 5px;
+}
+.main-page h1{
+	font-family: sans-serif;
+	margin-top: 25px;
+	margin-left: 400px;
+	max-width: 200px;
+	color: rgb(100,50,200);
+}
+.colum1{
+	text-align: center;
+	width: 10%;
+}
+.colum2{
+	width: 40%;
+}
+.colum3{
+	width: 10%;
+}
+.colum4{
+	width: 35%;
+}
+.ins{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.set{
+	border: 2px solid red;
+	padding: 25px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	right: 75px;
+	background-color: lightblue;
+	min-width: 350px;
+	margin-right: 25px;
+	position: fixed;
+	top: 185px;
+}
+.btty{
+	padding: 10px;
+}
+.btty input{
+	margin: 15px;
+	padding: 5px;
+}
+.samll-contant hr{
+	max-width: 830px;
+	text-align: left;
+}
